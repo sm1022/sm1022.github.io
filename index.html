@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="">
+</head>
+<body>
+<button onclick="user('login')">login</button>
+<button onclick="user('logout')">logout</button>
+<button onclick="user('getInfo')">getInfo(user)</button>
+<button onclick="network('getInfo')">getInfo(network)</button>
+<script src="./dist/LemScheme.js"></script>
+<script type="text/javascript">
+  function user(funcName) {
+    LemScheme.openApp({
+      type: 'play',
+      app: 'letv',
+      vid: '25862411'
+    });
+  }
+</script>
+</body>
+</html>
